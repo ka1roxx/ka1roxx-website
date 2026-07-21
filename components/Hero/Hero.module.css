@@ -1,0 +1,90 @@
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+  min-height: calc(100vh - var(--header-height));
+  min-height: calc(100dvh - var(--header-height));
+}
+.bgGlow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: min(483px, 65vw);
+  height: min(483px, 65vw);
+  transform: translate(-50%, -50%);
+  background-image: url('/logo-glow.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 1.5;
+  filter: blur(60px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subtitle {
+  margin-top: 20px;
+  font-size: clamp(16px, 2vw, 18px);
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1.6;
+  max-width: 480px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.primaryBtn {
+  width: 195px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  color: #0a0a0b;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 13px;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.primaryBtn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.secondaryLink {
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+@media (max-width: 480px) {
+  .actions {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .primaryBtn {
+    width: 100%;
+    max-width: 195px;
+  }
+}

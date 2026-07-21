@@ -1,0 +1,36 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  padding: 0;
+  font-family: inherit;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.icon {
+  width: 45px;
+  height: 45px;
+  flex-shrink: 0;
+}
+
+.text {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.large .icon {
+  width: clamp(32px, 6vw, 48px);
+  height: clamp(32px, 6vw, 48px);
+}
+
+.large .text {
+  font-size: clamp(32px, 7vw, 56px);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}

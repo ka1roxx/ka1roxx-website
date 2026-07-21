@@ -1,0 +1,43 @@
+.footer {
+  border-top: 1px solid #404040;
+  padding: 24px 40px;
+}
+
+.inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.links {
+  display: flex;
+  gap: 24px;
+}
+
+.link {
+  font-size: 18px;
+  font-weight: 400;
+  color: #6f6f74;
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: #ffffff;
+}
+
+.credit {
+  font-size: 16px;
+  font-weight: 500;
+  color: #6f6f74;
+}
+
+@media (max-width: 640px) {
+  .inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}

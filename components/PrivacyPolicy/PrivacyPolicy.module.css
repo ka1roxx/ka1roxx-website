@@ -1,0 +1,95 @@
+.section {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 140px 24px 100px;
+}
+
+.pageTitle {
+  font-size: clamp(28px, 5vw, 40px);
+  font-weight: 600;
+  text-align: center;
+}
+
+.updated {
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #6f6f74;
+  text-align: center;
+}
+
+.card {
+  margin-top: 48px;
+  background: #131315;
+  border: 1px solid #232326;
+  border-radius: 16px;
+  padding: 40px;
+}
+
+.block {
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #1c1c1f;
+}
+
+.block:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.blockTitle {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.text {
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #b0b0b5;
+  line-height: 1.75;
+}
+
+.text + .text {
+  margin-top: 10px;
+}
+
+.list {
+  margin-top: 12px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.listItem {
+  position: relative;
+  padding-left: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #b0b0b5;
+  line-height: 1.6;
+}
+
+.listItem::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #6f6f74;
+}
+
+.highlight {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+@media (max-width: 640px) {
+  .card {
+    padding: 28px 24px;
+  }
+}
