@@ -21,7 +21,7 @@
   background-position: center;
   background-size: contain;
   opacity: 1.5;
-  filter: blur(60px);
+  filter: blur(40px);
   z-index: 0;
   pointer-events: none;
 }
