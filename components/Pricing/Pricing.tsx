@@ -77,7 +77,7 @@ export default function Pricing() {
                 </li>
               ))}
             </ul>
-            <button className={styles.cta}>{plan.cta}</button>
+            <a href="#contact" className={styles.cta}>{plan.cta}</a>
           </div>
         ))}
       </div>
