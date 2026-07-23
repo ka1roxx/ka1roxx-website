@@ -7,8 +7,11 @@ export default function Hero() {
       <div className={styles.bgGlow} />
       <div className={styles.content}>
         <Logo size="large" interactive={false} />
+        <p className={styles.description}>
+          Створи свій лендінг
+        </p>
         <p className={styles.subtitle}>
-          Робіть собі портфоліо і показуйте вашим клієнтам ваш рівень роботи
+          Зробіть собі сайт-портфоліо та показуйте свої послуги в інтернеті. Ми допоможемо вам створити сучасний та ефективний веб-сайт, який відображає ваші навички або залучає нових клієнтів. 
         </p>
         <div className={styles.actions}>
           <a href="#pricing" className={styles.primaryBtn}>Наші послуги</a>

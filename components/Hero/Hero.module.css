@@ -34,8 +34,17 @@
   align-items: center;
 }
 
+.description {
+  margin-top: 10px;
+  font-size: clamp(24px, 4vw, 30px);
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 0.9;
+  max-width: 480px;
+}
+
 .subtitle {
-  margin-top: 20px;
+  margin-top: 14px;
   font-size: clamp(16px, 2vw, 18px);
   font-weight: 500;
   color: #ffffff;

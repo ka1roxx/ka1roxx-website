@@ -84,7 +84,7 @@ export default function Contact() {
   return (
     <section className={styles.section} id="contact" ref={sectionRef}>
       <h2 className={`${styles.title} ${isVisible ? styles.visible : ''}`}>Зв&apos;яжіться з нами</h2>
-      <p className={`${styles.subtitle} ${isVisible ? styles.visible : ''}`}>Viber, Telegram, або телефон</p>
+      <p className={`${styles.subtitle} ${isVisible ? styles.visible : ''}`}>Telegram, або instagram</p>
 
       <form className={`${styles.form} ${isVisible ? styles.visible : ''}`} onSubmit={handleSubmit}>
         <input
@@ -96,7 +96,7 @@ export default function Contact() {
         />
         <input
           type="tel"
-          placeholder="+380XXXXXXXXX"
+          placeholder="@username або instagram"
           className={styles.input}
           value={phone}
           onChange={(event) => setPhone(event.target.value)}
